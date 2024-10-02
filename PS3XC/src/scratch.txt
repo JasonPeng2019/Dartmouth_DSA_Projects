@@ -1,0 +1,25 @@
+pathname = "C:\\Users\\14005\\IdeaProjects\\cs10\\PS3XC\\ps6\\test2.txt";
+            compressedName = "C:\\Users\\14005\\IdeaProjects\\cs10\\PS3XC\\ps6\\test2Compressed.txt";
+            test1.compressFile(pathname, compressedName);
+            test1.decompressFile(compressedName, pathname);
+            pathname = "C:\\Users\\14005\\IdeaProjects\\cs10\\PS3XC\\ps6\\test3.txt";
+            compressedName = "C:\\Users\\14005\\IdeaProjects\\cs10\\PS3XC\\ps6\\test3Compressed.txt";
+            test1.compressFile(pathname, compressedName);
+            test1.decompressFile(compressedName, pathname);
+            pathname = "C:\\Users\\14005\\IdeaProjects\\cs10\\PS3XC\\ps6\\test4.txt";
+            compressedName = "C:\\Users\\14005\\IdeaProjects\\cs10\\PS3XC\\ps6\\test4Compressed.txt";
+            test1.compressFile(pathname, compressedName);
+            test1.decompressFile(compressedName, pathname);
+
+
+            pathname = "C:\\Users\\14005\\IdeaProjects\\cs10\\assignments\\PS3\\USConstitution.txt";
+            compressedName = "C:\\Users\\14005\\IdeaProjects\\cs10\\assignments\\PS3\\USConstitutionCompressed.txt";
+            test1.compressFile(pathname, compressedName);
+            test1.decompressFile(compressedName, pathname);
+            pathname = "C:\\Users\\14005\\IdeaProjects\\cs10\\assignments\\PS3\\WarAndPeace.txt";
+            compressedName = "C:\\Users\\14005\\IdeaProjects\\cs10\\assignments\\PS3\\WarAndPeaceCompressed.txt";
+            test1.compressFile(pathname, compressedName);
+            test1.decompressFile(compressedName, pathname);
+            File file = new File(compressedName);
+            long fileSizeInBytes = file.length();
+            System.out.println("File size of War and Peace: " + fileSizeInBytes + " bytes");

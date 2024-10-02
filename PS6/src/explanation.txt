@@ -1,0 +1,3 @@
+we did not have many synchronization issues. At first, we had drag on both clients working at the same time and altering the global sketch map, with threw errors. We resolved this by making changes only happen on click release, so the probability of collision goes down signficantly.
+
+to fix the problem if two clicks were to release at the same time, we made all the methods that edited the sketch synchronized, and made the send messages synchronized on both ends. This ensures only critical methods are synchronized. 

@@ -1,0 +1,1 @@
+the redo and undo buttons do not work. all other functionality works. did not have time to update editor2 so it doesn't work, but if you connect using 2 editor instances (on different computers) all functionality should work.

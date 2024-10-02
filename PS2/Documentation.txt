@@ -1,0 +1,17 @@
+Test 1) Testing PointQuadtree method with Drawing GUI:
+
+a. I tested by adding a few points, then implementing the search by hitting "q" and clicking on the points. They
+turned black, so the search worked.
+b. I tried test0 and test1 as given by the assignment. Both passed.
+c. I tried test2 of my own by creating 1000 random points, putting them in a HashSet, then for each point in that
+HashSet, doing a "search" on all of them. The search found every point, meaning the search functionality works.
+	- NB: Interestingly, the same test did not work for a TreeMap. This wasn't due to the search not working; 
+	rather, the TreeMap, when a compareTo = 0 was given for ((int)this.x == (int)p.x && (int)this.y == (int)	p.y) and -1 and 1 were assigned according to whether the x value was less or greater, accordingly (and in 	case x vals were the same, a greater y val meant compareTo = 1), the TreeSet was unable to correctly
+	compare two different TreeSets, and when I tried other means of equality such as "if 	(returnPoints.containsAll(points) && points.containsAll(returnPoints))", it would still fail to correctly
+	identify if two TreeSets were equal, even if by inspection the two sets were obviously equal (had the 
+	EXACT same elements). I would like to look into this further by asking Dr. Pierson or my TA. Clearly the 	TreeSet is having trouble searching through itself to look for the element and is missing it somehow.
+
+Test 2)
+
+a. Added a bunch of points, tested collision disappearance and redness. By visual inspection it passed all tests. Would place wanderers in front of moving bouncers to see if they collided as soon as the edges touched, and they did.
+

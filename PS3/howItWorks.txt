@@ -1,0 +1,24 @@
+first creates a map with letter: frequency pairing
+A:2, B:1
+
+next creates a tree with a node that contains both frequency and letter
+null, 3  -> A, 2
+	 -> B, 1
+
+take the tree with an empty string.
+	- make a new map
+
+	- if it's a leaf, add the 	letter and path to the map
+
+	- returns a map that has the 	path to each letter defined
+
+creates said map
+
+looks up character in map:
+finds the path and returns that path as sequences of true/false bits
+
+Extreme cases: 
+Singular letter:
+Tree has only root.
+ Solution: Mark it as a "0". Add char = 0 to the map. When decoding, won't be able to traverse anyways, and will run iterations for each character.
+

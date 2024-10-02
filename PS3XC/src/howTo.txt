@@ -1,0 +1,11 @@
+Storing the Huffman Tree:
+
+Go through the original data and calculate the frequency of each character.
+Store each character and its frequency as a pair. This could be something like A:5, B:10, C:7, etc., where A, B, and C are characters and 5, 10, and 7 are their respective frequencies.
+Sort these pairs in ascending order based on frequency.
+Save this sorted list in the compressed file. This list will allow you to reconstruct the Huffman tree when decompressing the file.
+Reconstructing the Huffman Tree:
+
+Read the list of character-frequency pairs from the compressed file.
+Start building the Huffman tree as you normally would, combining nodes with the lowest frequencies first and working your way up.
+Once all nodes are combined, you'll have a complete Huffman tree that can be used for decompression.
